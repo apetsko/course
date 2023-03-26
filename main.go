@@ -30,5 +30,6 @@ func main() {
 	fmt.Println(twoDslice.GetMax(randArr))
 
 	//convert to roman
-	fmt.Println(romanConvert.Arab2roman(33333))
+	roman, _ := romanConvert.Arab2roman(1999)
+	fmt.Println(roman)
 }
