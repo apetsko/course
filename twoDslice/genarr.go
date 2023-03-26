@@ -8,12 +8,15 @@ func GenArray(x, y, random int) [][]int {
 	arr := make([][]int, x)
 	for a := range arr {
 		arr[a] = make([]int, y)
-	}
-	for i := 0; i < x; i++ {
 		for j := 0; j < y; j++ {
-			arr[i][j] = rand.Intn(random)
+			arr[a][j] = rand.Intn(random)
 		}
 	}
+	// for i := 0; i < x; i++ {
+	// 	for j := 0; j < y; j++ {
+	// 		arr[i][j] = rand.Intn(random)
+	// 	}
+	// }
 	return arr
 }
 
